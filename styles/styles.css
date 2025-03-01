@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-/* ===============Shared styles=============== */
+/* ===========================Shared styles=========================== */
 .display-flex {
   display: flex;
 }
@@ -15,12 +15,26 @@
   display: none;
 }
 
-/* ===============Navbar styles=============== */
 .navbar,
-.banner {
+.banner,
+main {
   max-width: 1158px;
   margin: 0 auto;
 }
+
+.btn-banner {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 10px 47px;
+
+  border-radius: 12px;
+  background: rgb(17, 17, 17);
+  border: none;
+}
+
+/* ===========================Navbar styles=========================== */
+
 .navbar {
   justify-content: space-around;
 }
@@ -70,7 +84,30 @@ hr {
   display: none;
 }
 
-/* ===============Responsive media styles=============== */
+/* ===========================Banner styles=========================== */
+
+.banner {
+  gap: 50px;
+  margin-top: 18px;
+}
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+#empower {
+  color: rgb(254, 163, 1);
+}
+#vision {
+  color: rgb(1, 172, 253);
+}
+
+.banner-description {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* =======================Responsive media styles====================== */
 /* small devices */
 @media screen and (max-width: 576px) {
   .brand,
@@ -92,5 +129,10 @@ hr {
     display: block;
     border: 0.5px solid rgb(254, 163, 1);
     margin-top: 12px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
   }
 }
