@@ -5,13 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids School</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="quicksand-normal">
     <header>
-        <nav>
-
+        <!-- ===============Navbar section=============== -->
+        <nav class="navbar display-flex">
+            <div class="brand-container display-flex">
+                <img src="assets/logo.png" alt="">
+                <h3 class="brand">SCHOOL</h3>
+            </div>
+            <div class="hamburger display-none">
+                <img class="hamburger-icon" src="assets/hamburger.png" alt="">
+            </div>
+            <div class="nav-menu display-flex">
+                <!-- ul.menu-items>li.menu-item*4>a -->
+                <ul class="menu-items display-flex">
+                    <li class="menu-item"><a id="home" href="">Home</a></li>
+                    <li class="menu-item"><a id="about" href="">About</a></li>
+                    <li class="menu-item"><a id="facilities" href="">Facilities</a></li>
+                    <li class="menu-item"><a id="admission" href="">Admission</a></li>
+                </ul>
+                <button class="btn-primary">Contact</button>
+            </div>
         </nav>
+        <hr>
+        <!-- ===============Banner section=============== -->
+        <div class="banner"></div>
     </header>
     <main></main>
     <footer></footer>
