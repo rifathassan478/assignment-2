@@ -28,7 +28,7 @@
 }
 
 .full-width {
-  max-width: 1440px;
+  max-width: 1536px;
 }
 
 .btn-banner {
@@ -117,6 +117,11 @@ hr {
   display: none;
 }
 
+/* ===========================Marquee styles=========================== */
+marquee {
+  margin-top: 20px;
+}
+
 /* ===========================Banner styles=========================== */
 
 .banner {
@@ -138,6 +143,11 @@ hr {
 .banner-description {
   font-size: 1.25rem;
   font-weight: 400;
+}
+/* ===========================main styles=========================== */
+main {
+  max-width: 1536px;
+  background-image: url("../assets/bg.png");
 }
 
 /* ===========================curriculum styles=========================== */
@@ -223,6 +233,148 @@ hr {
   filter: brightness(0.8);
 }
 
+/* ===========================Our Stories styles=========================== */
+
+.stories {
+  background: linear-gradient(
+    0deg,
+    rgba(254, 163, 1, 0.3),
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  padding-bottom: 60px;
+}
+
+/* story 1 */
+.story1 {
+  max-width: 540px;
+  max-height: 630.52px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.btn-story1-date {
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 18px;
+  border-radius: 47.93px;
+  border: none;
+  background: rgb(60, 216, 232);
+  position: relative;
+  bottom: 30px;
+  left: 20px;
+}
+
+.story1-content .section-subtitle {
+  margin-bottom: 51px;
+}
+
+/* other stories */
+.other-story {
+  max-width: 290.69px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.btn-story-date {
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 18px;
+  border-radius: 47.93px;
+  border: none;
+  background: rgb(60, 216, 232);
+  position: relative;
+  bottom: 30px;
+  left: 20px;
+}
+.card-subtitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-title-holder {
+  justify-content: center;
+}
+
+.other-stories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.story-container {
+  gap: 20px;
+}
+
+/* extra stories for mobile view */
+
+#extra-story-hidden {
+  display: none;
+}
+
+#extra-story2-hidden {
+  display: none;
+}
+
+.other-story {
+  max-width: 290.69px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.btn-story-date {
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 18px;
+  border-radius: 47.93px;
+  border: none;
+  background: rgb(60, 216, 232);
+  position: relative;
+  bottom: 30px;
+  left: 20px;
+}
+.card-subtitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-title-holder {
+  justify-content: center;
+}
+
+.other-stories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.story-container {
+  gap: 20px;
+}
+
+/* story 3 button color */
+#story3 button {
+  background: rgb(93, 88, 240);
+}
+/* story button */
+.btn-story-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
 /* =======================Responsive media styles====================== */
 /* small devices */
 @media screen and (max-width: 576px) {
@@ -250,5 +402,68 @@ hr {
     flex-direction: column-reverse;
     justify-content: center;
     text-align: center;
+  }
+  .banner-image {
+    width: auto;
+  }
+  .curriculums {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide-icon-container {
+    display: none;
+  }
+
+  .story1 {
+    display: none;
+  }
+  #extra-story-hidden {
+    display: block;
+  }
+}
+
+/* small device rotate */
+
+@media screen and (min-width: ) (max-width: 616px) {
+  .brand,
+  .nav-menu {
+    display: none;
+  }
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger img {
+    max-width: 22px;
+  }
+
+  hr {
+    display: block;
+    border: 0.5px solid rgb(254, 163, 1);
+    margin-top: 12px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  .curriculums {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide-icon-container {
+    display: none;
+  }
+
+  .story1 {
+    display: none;
+  }
+  #extra-story-hidden {
+    display: block;
   }
 }
