@@ -13,6 +13,7 @@
   font-style: normal;
 }
 
+
 /* ===========================Shared styles=========================== */
 .display-flex {
   display: flex;
@@ -79,7 +80,7 @@ section {
   text-decoration: none;
 }
 .menu-items {
-  gap: 10px;
+  gap: 30px;
   margin-right: 186px;
 }
 #home {
@@ -148,6 +149,7 @@ marquee {
 main {
   max-width: 1536px;
   background-image: url("../assets/bg.png");
+  margin: 60px auto;
 }
 
 /* ===========================curriculum styles=========================== */
@@ -375,6 +377,63 @@ main {
   justify-content: center;
   margin-top: 80px;
 }
+
+/* ===========================Footer styles=========================== */
+
+.footer {
+  background: rgb(1, 172, 253);
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 100px 180px 174px 140px;
+}
+.footer-content-title {
+  color: rgb(255, 255, 255);
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.footer-description {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.footer-img-container,
+.footer-content {
+  max-width: 399.02px;
+}
+
+.footer-img-container img {
+  max-width: 69.23px;
+}
+
+.menu-title {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-menu li {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: 500;
+  list-style: none;
+  line-height: 40px;
+}
+
+.social-icons {
+  gap: 10px;
+}
+
+.footer-section {
+  justify-content: space-between;
+}
+
+.footer-img-container{
+    align-items: center;
+}
+
 /* =======================Responsive media styles====================== */
 /* small devices */
 @media screen and (max-width: 576px) {
@@ -421,49 +480,12 @@ main {
   #extra-story-hidden {
     display: block;
   }
-}
-
-/* small device rotate */
-
-@media screen and (min-width: ) (max-width: 616px) {
-  .brand,
-  .nav-menu {
-    display: none;
-  }
-  .navbar {
-    align-items: center;
-    justify-content: space-between;
-  }
-  .hamburger {
-    display: block;
-  }
-  .hamburger img {
-    max-width: 22px;
-  }
-
-  hr {
-    display: block;
-    border: 0.5px solid rgb(254, 163, 1);
-    margin-top: 12px;
-  }
-  .banner {
-    flex-direction: column-reverse;
-    justify-content: center;
-    text-align: center;
-  }
-  .curriculums {
+  .footer-section {
     flex-direction: column;
-    align-items: center;
+    justify-content: left;
+    align-items: flex-start;
   }
-
-  .slide-icon-container {
-    display: none;
-  }
-
-  .story1 {
-    display: none;
-  }
-  #extra-story-hidden {
-    display: block;
+  .footer {
+    padding: 20px;
   }
 }
